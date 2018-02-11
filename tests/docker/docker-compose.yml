@@ -1,0 +1,54 @@
+version: '2.1'
+
+services:
+  hub:
+    image: elgalu/selenium
+    ports:
+      - 4444:4444
+    volumes:
+      - /dev/shm:/dev/shm
+    privileged: true
+    environment:
+      - PICK_ALL_RANDOM_PORTS=true
+      - SELENIUM_HUB_HOST=hub
+      - SELENIUM_HUB_PORT=4444
+      - GRID=true
+      - CHROME=false
+      - FIREFOX=false
+      - MOCK_SERVER_HOST=mock
+    networks:
+      - selenium_network
+
+  firefox:
+    image: elgalu/selenium
+    depends_on:
+      - hub
+    volumes:
+      - /dev/shm:/dev/shm
+    privileged: true
+    environment:
+      - PICK_ALL_RANDOM_PORTS=true
+      - SELENIUM_HUB_HOST=hub
+      - SELENIUM_HUB_PORT=4444
+      - SELENIUM_NODE_HOST=firefox
+      - VNC_PORT=40650
+      - VNC_PASSWORD=tdfg89zer84eh69q4dh
+      - SCREEN_WIDTH=1024
+      - SCREEN_HEIGHT=768
+      - VIDEO=${VIDEO-false}
+      - GRID=false
+      - CHROME=false
+      - FIREFOX=true
+    ports:
+      - 40650:40650
+    networks:
+      - selenium_network
+      - my_app_network
+
+networks:
+  selenium_network:
+    external:
+      name: selenium_network
+  my_app_network:
+    external:
+      name: my_app_network
