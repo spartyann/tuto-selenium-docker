@@ -25,8 +25,9 @@ The advantages of using Selenium with Docker are as follows:
 
 Tuto made on a Debian GNU/Linux 9 (stretch)
 
-* Docker 17.12.0-ce
-* Docker Compose 1.18.0
+* Docker (17.12.0-ce)
+* Docker Compose (1.18.0)
+* xtightvncviewer
 * Scripts use **sudo** to execute docker as root
 
 For IDE :
@@ -35,3 +36,5 @@ For IDE :
 * Visual Studio Code 1.19.3 ( from official website <https://code.visualstudio.com/Download> and exec: dpkg -i code_XXXXXXX_amd64.deb )
 * Extension Visual Studio Code: **markdownlint** for README editing
 * Extension Visual Studio Code: **Docker** for docker file and docker-compose file editing
+* Extension Visual Studio Code: **XML Tools**
+* Extension Visual Studio Code: **Java Extension Pack**
