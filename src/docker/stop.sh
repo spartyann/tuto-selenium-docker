@@ -3,4 +3,4 @@
 sudo docker-compose down
 
 # delete My App netwotk
-sudo docker network remove my_app_network
+sudo docker network remove myapp_network

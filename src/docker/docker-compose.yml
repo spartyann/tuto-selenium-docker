@@ -1,17 +1,17 @@
 version: '2'
 
 services:
-  my_app:
+  myapp:
     image: php:7-apache-stretch
     volumes:
-      - ../my_app:/var/www/html
+      - ../myapp:/var/www/html
     ports:
       - 80:80
     networks:
-      - my_app_network
+      - myapp_network
 
 networks:
-  my_app_network:
+  myapp_network:
     external:
-      name: my_app_network
+      name: myapp_network
 
