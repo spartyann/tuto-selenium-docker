@@ -25,6 +25,7 @@ services:
       - hub
     volumes:
       - /dev/shm:/dev/shm
+      - ../../videos:/videos
     privileged: true
     environment:
       - PICK_ALL_RANDOM_PORTS=true

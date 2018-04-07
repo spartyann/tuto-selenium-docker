@@ -9,11 +9,9 @@ $(function(){
 			tasks: [
 				{
 					text: "First task",
-					done: false
 				},
 				{
 					text: "Second task",
-					done: false
 				}
 			],
 		},
@@ -22,10 +20,11 @@ $(function(){
 
 			addTask: function ()
 			{
-				this.tasks.push({text: "", done : false});
+				this.tasks.push({text: ""});
 			},
 
-			deleteTask: function (task) {
+			deleteTask: function (task)
+			{
 				var index = this.tasks.indexOf(task);
 				this.tasks.splice(index, 1);
 			}
