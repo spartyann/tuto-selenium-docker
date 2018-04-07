@@ -17,6 +17,7 @@ Clone the repository, run the command: ./run_all.sh
 And just follow the instructions.
 
 Here is a video that shows you this command in action:
+
 [![Tuto video](https://img.youtube.com/vi/5TeBtSf5kSQ/0.jpg)](https://www.youtube.com/watch?v=5TeBtSf5kSQ)
 
 ## Why use Selenium in Docker
