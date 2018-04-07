@@ -1,0 +1,48 @@
+body {
+	font-family: arial;
+}
+
+.tbl { display:table; }
+
+.tbl-100 {
+	display:table;
+	width:100%;
+}
+
+.tr { display:table-row; }
+
+.td {
+	vertical-align:top;
+	display:table-cell;
+}
+.td-100 {
+	vertical-align:top;
+	display:table-cell;
+	width:100%;
+}
+
+.vat { vertical-align:top; }
+.vam { vertical-align:middle; }
+.vab { vertical-align:bottom; }
+.tal { text-align:left; }
+.tac { text-align:center; }
+.tar { text-align:right; }
+
+.task {
+	margin-top: 10px;
+	background-color: #eeeeee;
+	padding: 5px;
+}
+
+input {
+	width: 100%;
+	box-sizing: border-box; /* Firefox */
+}
+
+a{
+	cursor: pointer;
+	color: blue;
+}
+a:hover{
+	text-decoration: underline;
+}

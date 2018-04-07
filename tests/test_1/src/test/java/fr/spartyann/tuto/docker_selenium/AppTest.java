@@ -72,11 +72,32 @@ public class AppTest
         
 		Thread.sleep(1000);
 
-		WebElement link = driver.findElement(By.cssSelector("#my_link"));
+		WebElement link = driver.findElement(By.cssSelector("#task_delete_1"));
 		link.click();
 
+		Thread.sleep(300);
+
+		link = driver.findElement(By.cssSelector("#task_delete_0"));
+		link.click();
+
+		WebElement addLink = driver.findElement(By.cssSelector("#add_task"));
+		
+		for (int i = 0; i< 10; i++)
+		{
+			Thread.sleep(50);
+			addLink.click();
+		}
+
+
+		for (int i = 0; i< 10; i++)
+		{
+			Thread.sleep(50);
+			WebElement input = driver.findElement(By.cssSelector("#task_text_" + i));
+			input.sendKeys("Task n° " + i);
+		}
+
 		WebElement title = driver.findElement(By.cssSelector("h1"));
-		assertTrue(title.getText().trim().equals("My App - Page 2"));
+		assertTrue(title.getText().trim().equals("Tasks (10)"));
 
 		Thread.sleep(2000);
     }
