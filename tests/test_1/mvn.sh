@@ -1,4 +1,4 @@
-
+cd $(dirname $0)
 
 sudo docker run --rm --network="selenium_network" \
 	 -v ${PWD}/../../.m2:/root/.m2 \

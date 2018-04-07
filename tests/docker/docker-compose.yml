@@ -32,8 +32,8 @@ services:
       - SELENIUM_HUB_HOST=hub
       - SELENIUM_HUB_PORT=4444
       - SELENIUM_NODE_HOST=firefox
-      - VNC_PORT=40650
-      - VNC_PASSWORD=tdfg89zer84eh69q4dh
+      - VNC_PORT=${VNC_PORT-40650}
+      - VNC_PASSWORD=${VNC_PASSWORD-51edfg6df851hd6h851dfgh69815dfg6h981dfg69h81dfg6h}
       - SCREEN_WIDTH=1024
       - SCREEN_HEIGHT=768
       - VIDEO=${VIDEO-false}
@@ -41,7 +41,7 @@ services:
       - CHROME=false
       - FIREFOX=true
     ports:
-      - 40650:40650
+      - ${VNC_PORT-40650}:${VNC_PORT-40650}
     networks:
       - selenium_network
       - myapp_network

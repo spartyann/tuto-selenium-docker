@@ -1,7 +1,8 @@
+source ../../vars.sh
+
 echo ""
 echo "require xtightvncviewer installed"
 
-echo "password: "
-echo "tdfg89zer84eh69q4dh"
+echo "password: $VNC_PASSWORD"
 echo ""
-xtightvncviewer 127.0.0.1:40650
+xtightvncviewer 127.0.0.1:$VNC_PORT

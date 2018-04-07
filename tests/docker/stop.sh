@@ -1,6 +1,8 @@
 
-# Stop My App
+# Stop Selenium
 sudo docker-compose down
 
-# delete My App netwotk
-sudo docker network remove selenium_network
+# delete Selenium netwotk
+if [ "$(sudo docker network inspect selenium_network 2> /dev/null)" != "[]" ]; then
+	sudo docker network remove selenium_network
+fi
