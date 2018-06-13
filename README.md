@@ -12,7 +12,7 @@ This tutorial aims to present a way to use Selenium with Docker.
 Clone the repository, run the command: ./run_all.sh
 And just follow the instructions.
 
-## Tutorial video
+## Tutorial video (In French - En Français)
 
 [![Tuto video](https://img.youtube.com/vi/552d407D0-o/0.jpg)](https://youtu.be/552d407D0-o)
 
