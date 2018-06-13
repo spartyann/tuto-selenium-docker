@@ -16,6 +16,8 @@ And just follow the instructions.
 
 [![Tuto video](https://img.youtube.com/vi/552d407D0-o/0.jpg)](https://youtu.be/552d407D0-o)
 
+https://youtu.be/552d407D0-o
+
 ## Why use Selenium in Docker
 
 The advantages of using Selenium with Docker are as follows:
